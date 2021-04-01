@@ -13,6 +13,7 @@ if (!email || email == "") {
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {
+            console.log("message added");
         return next(new errors.BadRequest('Please enter valid email address.', 1000));
     }
 

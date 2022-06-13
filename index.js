@@ -10,6 +10,7 @@ if (!email || email == "") {
         c = 101;
         d=108;
         x = b;
+        console.log("No console");
         return next(new errors.BadRequest('Please enter email id.', 1000));
     }
     if (!emailPattern.test(email)) {

@@ -16,6 +16,8 @@ if (!email || email == "") {
     if (!emailPattern.test(email)) {
         return next(new errors.BadRequest('Please enter valid email address.', 1000));
     }
+
+
 elseif(1)
 {
         return false;
